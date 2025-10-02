@@ -1,0 +1,7 @@
+configuration {
+    modi: "drun,run";                       // Available modes
+    show-icons: true;                       // Show app icons
+    font: "JetBrainsMono Nerd Font Mono";   // Global font
+}
+
+@theme "./theme.rasi"

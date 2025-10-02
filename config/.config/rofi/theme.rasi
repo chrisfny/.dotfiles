@@ -1,0 +1,88 @@
+* {
+  font: "JetBrainsMono Nerd Font Mono 10";
+  blur: true;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 0px;  // remove default rounding globally
+}
+
+window{
+  width: 800px;
+  height: 600px;
+  location: center;
+  blur: true;
+  border: 2px;
+  border-radius: 3px;
+  border-color: #61afef;
+  background-color: transparent;  // let Hyprland handle opacity
+  padding: 0px;
+  margin: 30px 50px;
+}
+
+mainbox {
+  orientation: horizontal;
+  children: [ "borderbox" ];
+  spacing: 0px;
+  padding: 0px;
+}
+
+borderbox {
+  orientation: horizontal;
+  children: [ "imagebox", "contentbox" ];
+  padding: 0px;
+  spacing: 0px;
+  border-radius: 3px;
+}
+
+contentbox {
+  orientation: vertical;
+  children: [ "entry", "listview" ];
+  spacing: 0px;
+  padding: 0px;
+  expand: true;
+}
+
+imagebox{
+  background-image: url("~/.config/wallpaper/rofi.jpg");
+  background-repeat: false;
+  size: 400px 600px;
+}
+
+element {
+  border-radius: 0px;
+}
+
+element-text, element-icon {
+  padding: 6px 8px;
+  spacing: 2px;
+  text-color: #fab387;
+}
+
+element selected {
+  background-color: #191919;
+  text-color: #e5c07b;
+  border-radius: 3px;
+}
+
+prompt {
+  enabled: false;
+  background-color: transparent;
+  text-color: #61afef;
+  padding: 5px 10px;
+}
+
+entry {
+  padding: 8px;
+  expand: false;
+  font: "JetBrainsMono Nerd Font Mono 10";
+  text-color: #fab387;
+  border-radius: 0px 3px 0px 0px;
+  background-color: #292e36;  // input field
+}
+
+listview {
+  lines: 1;
+  background-color: rgba(46, 52, 64, 1.0); // solid background inside blur
+  border-radius: 0px 0px 3px 0px;
+  padding: 5px;
+}
