@@ -1,0 +1,74 @@
+{
+  "layer": "top",
+  "position": "top",
+  "margin-top": 0,
+  "margin-bottom": 0,
+
+  "modules-left": [
+    "clock",
+    "network",
+    "cpu"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "battery",
+    "pulseaudio",
+    "backlight"
+  ],
+
+  "clock": {
+    "tooltip-format": "{calendar}",
+    "format-alt": "{:%a, %d %b %Y}",
+    "format": "[{:%H:%M}]"
+  },
+
+  "network": {
+    "format-wifi": "󰖩 {essid}",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󱛅 Disconnected",
+    "tooltip": true,
+    "interval": 5
+  },
+
+  "cpu": {
+    "format": "CPU: {usage}%",
+    "tooltip": true,
+    "interval": 1,
+    "on-click": "kitty htop"
+  },
+
+  "hyprland/workspaces": {
+    "format": "{name}",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "active-only": false
+  },
+
+  "battery": {
+    "format": "{capacity}%  ",
+    "format-charging": "{capacity}% 󱐋",
+    "format-plugged": "{capacity}% ",
+    "tooltip": true,
+    "interval": 10
+  },
+    
+
+  "pulseaudio": {
+    "format": "  {volume}%",
+    "format-muted": " {volume}%"
+    //"bar-width": 10,
+    //"bar-symbol-filled": "█",
+    //"bar-symbol-empty": "▒"
+  },
+  "backlight": {
+    "format": "  {percent}%"
+    //"bar-width": 10,
+    //"bar-symbol-filled": "█",
+    //"bar-symbol-empty": "▒"
+  }
+}

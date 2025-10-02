@@ -1,0 +1,12 @@
+[user]
+    name = Christoffer Fosmo Nyberg
+    email = christoffer.fosmonyberg@gmail.com
+
+[init]
+    defaultBranch = main
+
+[url "git@github.com:"]
+     insteadOf = "gh:"
+
+[fetch]
+    prune = true
