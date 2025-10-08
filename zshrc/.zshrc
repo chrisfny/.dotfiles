@@ -23,4 +23,5 @@ alias lla='ll -a'
 alias grep='grep --color=auto'
 alias eduroam-sucks='nmcli connection down eduroam && nmcli connection up eduroam'
 
+
 fastfetch
