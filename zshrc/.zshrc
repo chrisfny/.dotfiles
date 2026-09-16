@@ -22,6 +22,6 @@ alias ll='eza -lghT --git-repos --git -L=1 --icons --hyperlink --group-directori
 alias lla='ll -a'
 alias grep='grep --color=auto'
 alias eduroam-sucks='nmcli connection down eduroam && nmcli connection up eduroam'
-
+export MANSECT="2:3:1:8:5:4:7:6:9:3P" # Prevents all results from being from 3P 
 
 fastfetch
